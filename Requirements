@@ -1,0 +1,48 @@
+Lab Requirements:
+
+----------------------
+
+Purpose
+
+To learn how to add and remove from a binary search tree. This lab will prepare you for the upcoming AVL lab.
+
+Background
+
+A binary search tree (BST), which may sometimes be called an ordered or sorted binary tree, is a node-based data structure where each node references a value, a left child, and a right child. Binary search trees are characterized by the following properties:
+
+    The left subtree of a node contains only nodes with values less than the node's value.
+    The right subtree of a node contains only nodes with values greater than the node's value.
+    There must be no duplicate nodes.
+    Both the left and right subtrees of a node also must be binary search trees (each subtree must have the first three properties). [Wikipedia]
+
+Requirements
+
+Part 1 - Implement the NodeInterface (5 points)
+
+    Implement the NodeInterface.
+
+Part 2 - Add Nodes to the Binary Search Tree (10 points)
+
+    Implement the add method in the BSTInterface. You must use your implementation of NodeInterface properly in the structure of your binary search tree.
+    Implement the getRootNode method in the BSTInterface.
+
+Part 3 - Remove Nodes from the Binary Search Tree (15 points)
+
+    Implement the remove method in the BSTInterface. You must use your implementation of NodeInterface properly with your binary search tree.
+    There are several logically correct ways to remove from a binary search tree. See the requirement notes for instructions on how to remove correctly to pass the test driver.
+
+Part 4 - Pass Valgrind (8 points)
+
+    You must pass parts 1 - 3 as well as Valgrind to receive credit for this part.
+
+UML design document. (2 points)
+
+    You must bring a hard copy when you come in to pass off.
+
+Requirement Notes
+
+There are multiple correct methods for removing nodes from a tree; each method may result in a distinct tree. Some conventions need to be used to ensure that your tree properly matches ours. When removing, use the method described on page 476 of the course text.
+
+Remember to disallow duplicate entries and to handle the case when the element to be removed is not in the tree.
+
+You are required to write a separate '.h' and '.cpp' for every class you implement.
